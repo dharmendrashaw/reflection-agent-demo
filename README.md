@@ -40,13 +40,17 @@ Install the project dependencies from the lockfile:
 uv sync
 ```
 
-Create a `.env` file in the project root and add your Gemini API key:
+Copy `.env.example` to `.env` in the project root, then add your Gemini API key:
 
-```dotenv
-GOOGLE_API_KEY=your-google-api-key
+```sh
+cp .env.example .env
 ```
 
 Keep `.env` local; do not commit API keys or other credentials.
+
+LangSmith tracing is enabled by default in the example configuration. Add your
+LangSmith API key to `.env` to send traces to the `reflection-agent-demo`
+project, or set `LANGSMITH_TRACING=false` to disable tracing.
 
 ## Run
 
