@@ -22,6 +22,10 @@ the reflection chain; the critique is then added to the graph history as a
 When `main.py` runs, it also prints Mermaid and ASCII graph representations and
 writes a graph image to `flow.png`.
 
+### Reflection agent graph
+
+![Reflection agent graph](./flow.png)
+
 ## Requirements
 
 - Python 3.13 or newer
